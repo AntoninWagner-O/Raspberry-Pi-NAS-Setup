@@ -12,4 +12,5 @@ This guide covers setup of Raspberry Pi, OpenMediaVault and Samba, incloding bas
   - SSH – Remote access
 
 #Getting Started
+
 You can start with setup_raspberry.md to prepare your Raspberry Pi.
