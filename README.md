@@ -11,6 +11,6 @@ This guide covers setup of Raspberry Pi, OpenMediaVault and Samba, incloding bas
   - UFW – Uncomplicated Firewall
   - SSH – Remote access
 
-#Getting Started
+# Getting Started
 
 You can start with setup_raspberry.md to prepare your Raspberry Pi.
