@@ -23,21 +23,21 @@ I will talk about OpenMediaVaul and Samba. I will also show you some basic firew
    8. Update your system packages **sudo apt update && sudo apt upgrade**.
    9. Your Raspberry Pi is now set up. The next step is configuring either OpenMediaVault or Samba for NAS to be fully functional. 
 
-2. Samba setup
-  1. In bash install your Samba - **sudo apt install samba nfs-kernel-server**
-  2. Create your *share directory* - **sudo mkdir ~/nas_share**
-  4. Edit Samba *configuration file* - **sudo nano /etc/samba/smb.conf**
+2. **Samba setup**
+   1. In bash install your Samba - **sudo apt install samba nfs-kernel-server**
+   2. Create your *share directory* - **sudo mkdir ~/nas_share**
+   3. Edit Samba *configuration file* - **sudo nano /etc/samba/smb.conf**
        [nas_share]
          path = /home/"your_user"/shared
          read only = no
          browsable = yes
          valid users = @users
-  5. Add a Samba user - **sudo smbpasswd -a "your_user"**
-  6. Start and enable Samba service - **sudo systemctl restart smbd**, **- sudo systemctl enamble smbd**
-  7. Now we can setup security measures.
-  8. **Install firewall** - **sudo apt install ufw**
-  9. Allow Samba access within your home network - **sudo ufw all from "your_home_ip_network" to any port 445**
-  10. Enable your **firewall** - **sudo afw enable**
-  11. This setup will enable connection to Raspberry Pi inside your network, but now outside.
+   4. Add a Samba user - **sudo smbpasswd -a "your_user"**
+   5. Start and enable Samba service - **sudo systemctl restart smbd**, **- sudo systemctl enamble smbd**
+   6. Now we can setup security measures.
+   7. **Install firewall** - **sudo apt install ufw**
+   8. Allow Samba access within your home network - **sudo ufw all from "your_home_ip_network" to any port 445**
+   9. Enable your **firewall** - **sudo afw enable**
+   10. This setup will enable connection to Raspberry Pi inside your network, but now outside.
 
 
