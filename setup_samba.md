@@ -5,13 +5,13 @@
       
        [nas_share]
       
-         path = /home/"your_user"/shared
+            path = /home/"your_user"/shared
       
-         read only = no
+            read only = no
       
-         browsable = yes
+            browsable = yes
       
-         valid users = @users
+            valid users = @users
       
    5. Add a Samba user - **sudo smbpasswd -a "your_user"**
    6. Start and enable Samba service - **sudo systemctl restart smbd**, **- sudo systemctl enable smbd**
