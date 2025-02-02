@@ -5,10 +5,11 @@ This guide covers setup of Raspberry Pi, OpenMediaVault and Samba, incloding bas
 
 **Used technologies.**
   - Raspberry Pi OS (Debian - based)
-  - OpenMediaVault
-  - Samba
-  - NFS
-  - UFW - firewall
-  - ssh for remote access
+  - OpenMediaVault – Web-based NAS management
+  - Samba – Windows file sharing
+  - NFS – UNIX file sharing
+  - UFW – Uncomplicated Firewall
+  - SSH – Remote access
 
-You can find files with instructions how to setup your Raspberry Pi.
+#Getting Started
+You can start with setup_raspberry.md to prepare your Raspberry Pi.
