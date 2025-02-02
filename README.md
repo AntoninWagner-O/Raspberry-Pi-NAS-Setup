@@ -13,4 +13,4 @@ This guide covers setup of Raspberry Pi, OpenMediaVault and Samba, incloding bas
 
 # Getting Started
 
-You can start with https://github.com/AntoninWagner-O/Raspberry-Pi-NAS-Setup/blob/main/Raspberry-Pi-NAS-Setup/setting_up_raspberry.md to prepare your Raspberry Pi.
+You can start with [setting_up_raspberry.md](https://github.com/AntoninWagner-O/Raspberry-Pi-NAS-Setup/blob/main/Raspberry-Pi-NAS-Setup/setting_up_raspberry.md). to prepare your Raspberry Pi.
