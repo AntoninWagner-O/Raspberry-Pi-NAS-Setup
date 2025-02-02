@@ -33,7 +33,7 @@ I will talk about OpenMediaVaul and Samba. I will also show you some basic firew
          browsable = yes
          valid users = @users
    4. Add a Samba user - **sudo smbpasswd -a "your_user"**
-   5. Start and enable Samba service - **sudo systemctl restart smbd**, **- sudo systemctl enamble smbd**
+   5. Start and enable Samba service - **sudo systemctl restart smbd**, **- sudo systemctl enable smbd**
    6. Now we can setup security measures.
   
 3. **Security measures**
@@ -44,15 +44,31 @@ I will talk about OpenMediaVaul and Samba. I will also show you some basic firew
    5. Access **from outside the network** is blocked unless additional rules are implemented. 
 
 4. **OpenMediaVault setup**
-   1. In bash install your OpenMediaVault - **sudo wget -O - https://raw.githubusercontent.com/OpenMediaVault-Plugin-Developers/installScript/master/install | sudo bash**
-   2. After everything install, your bash will probably stops. Raspberry Pi will also change its Ip adress.
-   3. In router settings, you will find new Ip adress for Raspberry Pi and you put this adress to your web browser.
-   4. Once OpenMediaVault web will show, you will sign in with user name **admin** and password **openmediavault**
-   5. Now you are in, you change your password.
-   6. Go into *Storage - File System*. There you can mount your disk, you will use for storage.
-   7. Move to *Shared folders* and **create your shared folder**.
-   8. Then in *Services* **enable NFS and SMB**.
-   9. Then in top right corner press **Apply** and now you should be able to acces your shared folder.
-   10. You can also setup your firewall rules in *Network - Firewall*.
+   1. Open terminal and install your OpenMediaVault with this command
+    - **sudo wget -O - https://raw.githubusercontent.com/OpenMediaVault-Plugin-Developers/installScript/master/install | sudo bash**
+   3. Once the installation is done, terminalmight  stops. Raspberry Pi will also change its Ip adress.
+   4. In router settings, you will find new Ip of your Raspberry Pi and enter this adress to your web browser.
+   5. Once OpenMediaVault web will show, you will sign in with user name **admin** and password **openmediavault**
+   6. Change your password immediately after logged in.
+   7. Go into *Storage - File System*. There you can mount your disk, you will use for storage.
+   8. Move to *Shared folders* and **create your shared folder**.
+   9. Unders *Services* **enable NFS and SMB** as needed.
+   10. Then in top right corner press **Apply** and now you should be able to acces your shared folder.
+   11. You can also setup your firewall rules in *Network - Firewall*.
 
 5. **Acces to your folders**
+   1. This section is divided into two parts. 
+   2. **Windows part**
+   3. Open **File Explorer**.
+   4. Right click on *This PC* and select **Add network location**.
+   5. For address type - **\\"ip_address_of_raspberry"\"shared_folder_name"**.
+   6. Enter your **user_name** and **password**.
+   7. Your shared folder should now be accessible in *This PC*.
+   8. **UNIX-based part**
+   9. Open **Finder** on macOS or your **File Manager** on linux.
+   10. Click *Go* and then **Connect to server**.
+   11. Enter your Ip address - **smb://"ip_address_of_raspberry"/"shared_folder_name"** or **nfs"//.../...***. Depends on         what sharing protocol are you using.
+   12. Sign in with your data.
+   13. Your folder should now be mounted in your computer.
+  
+  
