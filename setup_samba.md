@@ -3,14 +3,10 @@
    2. Create your *share directory* - **sudo mkdir ~/nas_share**
    3. Edit Samba *configuration file* - **sudo nano /etc/samba/smb.conf**
       
-       [nas_share]
-      
+          [nas_share]
             path = /home/"your_user"/shared
-      
             read only = no
-      
             browsable = yes
-      
             valid users = @users
       
    5. Add a Samba user - **sudo smbpasswd -a "your_user"**
