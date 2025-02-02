@@ -10,3 +10,5 @@ I will talk about OpenMediaVaul and Samba. I will also show you some basic firew
   - NFS
   - UFW - firewall
   - ssh for remote access
+
+You can find files with instructions.
