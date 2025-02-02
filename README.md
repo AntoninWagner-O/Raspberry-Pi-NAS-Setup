@@ -12,7 +12,7 @@ This guide covers setup of Raspberry Pi, OpenMediaVault and Samba, incloding bas
   - SSH – Remote access
 
 # Project Structure
-Raspberry-Pi-NAS-Setup
+**Raspberry-Pi-NAS-Setup**
   - setting_up_raspberry.md
   - OpenMediaVault_setup.md
   - Samba_setup.md
