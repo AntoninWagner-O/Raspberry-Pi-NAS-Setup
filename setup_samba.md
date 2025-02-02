@@ -2,6 +2,7 @@
    1. In bash install your Samba - **sudo apt install samba nfs-kernel-server**
    2. Create your *share directory* - **sudo mkdir ~/nas_share**
    3. Edit Samba *configuration file* - **sudo nano /etc/samba/smb.conf**
+      
        [nas_share]
       
          path = /home/"your_user"/shared
