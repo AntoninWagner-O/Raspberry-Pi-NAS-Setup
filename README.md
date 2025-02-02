@@ -35,9 +35,11 @@ I will talk about OpenMediaVaul and Samba. I will also show you some basic firew
    4. Add a Samba user - **sudo smbpasswd -a "your_user"**
    5. Start and enable Samba service - **sudo systemctl restart smbd**, **- sudo systemctl enamble smbd**
    6. Now we can setup security measures.
-   7. **Install firewall** - **sudo apt install ufw**
-   8. Allow Samba access within your home network - **sudo ufw all from "your_home_ip_network" to any port 445**
-   9. Enable your **firewall** - **sudo afw enable**
-   10. This setup will enable connection to Raspberry Pi inside your network, but now outside.
+  
+3. **Security measures**
+   1. **Install firewall** - **sudo apt install ufw**
+   2. Allow Samba access within your home network - **sudo ufw all from "your_home_ip_network" to any port 445**
+   3. Enable your **firewall** - **sudo afw enable**
+   4. This setup will enable connection to Raspberry Pi inside your network, but now outside.
 
 
