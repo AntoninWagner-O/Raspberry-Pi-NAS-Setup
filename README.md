@@ -11,6 +11,15 @@ This guide covers setup of Raspberry Pi, OpenMediaVault and Samba, incloding bas
   - UFW – Uncomplicated Firewall
   - SSH – Remote access
 
+# Project Structure
+Raspberry-Pi-NAS-Setup
+  - setting_up_raspberry.md
+  - OpenMediaVault_setup.md
+  - Samba_setup.md
+  - Shared_folders.md
+  - security.md
+  - networking.md
+
 # Getting Started
 
 You can start with [setting_up_raspberry.md](https://github.com/AntoninWagner-O/Raspberry-Pi-NAS-Setup/blob/main/Raspberry-Pi-NAS-Setup/setting_up_raspberry.md). to prepare your Raspberry Pi.
